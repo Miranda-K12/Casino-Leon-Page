@@ -1,0 +1,72 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+footer {
+  padding: 2.4rem 4.8rem;
+  width: 100%;
+  background-color: var(--color-dark);
+}
+
+.footer__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  color: var(--casino-gold);
+  font-size: 1.4rem;
+  font-weight: 500;
+  font-style: italic;
+
+}
+
+.footer__contact__icon-box {
+  position: fixed;
+  right: 0;
+  top: 85%;
+  background-color: var(--casino-gold);
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.footer__contact__icon {
+  width: 4rem;
+  height: 4rem;
+}
+
+.footer__social-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20%;
+}
+
+.footer__social-icons__icon {
+  width: 2.4rem;
+  height: 2.4rem;
+  -webkit-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+
+.footer__social-icons__icon:hover {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}

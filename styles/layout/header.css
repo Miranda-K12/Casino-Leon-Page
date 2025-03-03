@@ -1,0 +1,202 @@
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 2.4rem 4.8rem;
+  width: 100%;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: var(--color-dark);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  color: var(--color-white);
+}
+
+.header__logo {
+  width: 10rem;
+  height: auto;
+}
+
+.header__image {
+  width: 20%;
+  -webkit-animation: zooming 1s ease-out 2s infinite;
+  animation: zooming 1s ease-out 2s infinite;
+}
+
+.header__img {
+  width: 60%;
+  height: auto;
+}
+
+/* Dark/Light Mode Toggle */
+.header__dark-light__img {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+/* Registration Form */
+.registration-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 1.6rem;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+
+.registration-form_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.registration-form__button {
+  padding: 0.5rem 2.4rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  color: var(--color-black);
+  -webkit-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  margin-right: 2.4rem;
+}
+
+.registration-form__button:hover {
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
+}
+
+.registration-form__button--register {
+  background-color: var(--color-green);
+}
+
+.registration-form__button--submit {
+  background-color: var(--casino-gold);
+  padding: 0.5rem 2.4rem;
+}
+
+.registration-form__group {
+  border-radius: 0.5rem;
+  position: relative;
+}
+
+.registration-form__group img {
+  width: 2rem;
+  height: 2rem;
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.registration-form__group input {
+  padding: 0.5rem;
+  padding-left: 3.6rem;
+  width: 90%;
+  border-radius: 0.5rem;
+  background-color: var(--color-black);
+  border: none;
+  color: var(--casino-gold);
+  -webkit-transition: border-color 0.2s ease-in-out;
+  -o-transition: border-color 0.2s ease-in-out;
+  transition: border-color 0.2s ease-in-out;
+}
+
+.registration-form__group input:focus {
+  border: 1px solid var(--casino-gold);
+  outline: none;
+}
+
+.header__dark-light__icon {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+.header__dark-light {
+  padding: 1rem 2rem;
+}
+
+.hamburger {
+  display: none;
+}
+
+.hamburger__bar {
+  height: 4px;
+  width: 3rem;
+  background-color: var(--casino-gold);
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.burger-menu {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 1.6rem;
+  height: 100vh;
+  width: 60%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-transition: all 1s ease-out;
+  -o-transition: all 1s ease-out;
+  transition: all 1s ease-out;
+  background-color: var(--color-light);
+  cursor: pointer;
+}
+
+.hamburger.active .hamburger__bar:nth-child(1) {
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  top: 20px;
+  -webkit-transform-origin: center;
+  -ms-transform-origin: center;
+  transform-origin: center;
+  z-index: 100;
+  position: absolute;
+}
+
+.hamburger.active .hamburger__bar:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active .hamburger__bar:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  top: 20px;
+  -webkit-transform-origin: center;
+  -ms-transform-origin: center;
+  transform-origin: center;
+  z-index: 1000;
+  position: absolute;
+}

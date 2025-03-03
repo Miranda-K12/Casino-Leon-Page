@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta
+      name="description"
+      content=" ">
+     <meta name="keywords" content="Leon casino, online casino, slot games, gambling, dice, lucky, blackjack, poker, roulette, live casino, casino bonus, slot machines, jackpot, vegas, roulette online, best casino games">
+    <meta name="author" content="Miranda Kachlavashvili">
+  <link rel="stylesheet" href="./styles/base/reset.css">
+    <link rel="stylesheet" href="./styles/base/base.css">
+    <link rel="stylesheet" href="./styles/layout/header.css">
+    <link rel="stylesheet" href="./styles/sections/hero_section.css">
+    <link rel="stylesheet" href="./styles/sections/game_list_section.css">
+    <link rel="stylesheet" href="./styles/sections/process_section.css">
+    <link rel="stylesheet" href="./styles/sections/game__section.css">
+    <link rel="stylesheet" href="./styles/sections/cta_section.css">
+    <link rel="stylesheet" href="./styles/layout/footer.css">
+    <link rel="stylesheet" href="./styles/animations/animation.css">
+    <link rel="stylesheet" href="./styles/media/responsive.css">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="icon" href="./images/favicon.svg" type="image/x-icon">
+  <title>Casino</title>
+</head>
+<body>
+  <!-- header -->
+<header class="header">
+  <!-- Company Logo -->
+  <img  src="./assets/icons/logo.svg" class="header__logo"  alt="company-logo"/>
+   <!-- Header images related to games -->
+  <div class="header__image">
+  <img src="./assets/images/header-img-1.png" alt="wolf-gold-game-logo" class="header__img" />
+</div>
+<!-- Registration Form -->
+<form id="registration-form" class="registration-form" onsubmit="return validateForm()">
+  <!-- Register Button -->
+  <button type="button" class="registration-form__button registration-form__button--register">Registrar</button>
+  <div class="registration-form_wrapper">
+    <!-- Email Field -->
+    <div class="registration-form__group">
+      <img src="./assets/icons/user.svg" alt="username-icon"/>
+      <input type="email" id="email" name="email" class="registration-form__input" placeholder="E-mail" required>
+    </div>
+    <!-- Password Field -->
+    <div class="registration-form__group">
+  <img src="./assets/icons/password.svg" alt="password-icon" class="password_icon" id="togglePassword"/>
+  <input type="password" id="password" name="password" class="registration-form__input" placeholder="Senha" required>
+</div>
+  </div>
+  <!-- Submit Button -->
+  <button type="submit" class="registration-form__button registration-form__button--submit">Entrar</button>
+</form>
+
+ <!-- Dark/Light Mode -->
+  <div class="header__dark-light">
+    <img src="./assets/icons/dark-mode.svg" alt="dark-mode" class="header__dark-light__img" />
+  </div>
+<!-- Hamburger menu icon -->
+<div class="hamburger" id="hamburger">
+  <!-- The three bars that make up the hamburger icon -->
+  <div class="hamburger__bar"></div>
+  <div class="hamburger__bar"></div>
+  <div class="hamburger__bar"></div>
+</div>
+
+<!-- Burger menu (hidden by default) -->
+<div class="burger-menu" id="burger-menu">
+  <!-- Registration form-->
+  <form class="registration-form_box" onsubmit="return validateForm()">
+  <div class="form-wrapper">
+    <!-- Button for user to register -->
+    <button type="button" class="form-button form-button--register">Registrar</button>
+    <!-- Group for email input (username) -->
+    <div class="form-group">
+      <img src="./assets/icons/user.svg" alt="username-icon" />
+      <input type="email" name="mail" id="useremail" class="form-input" placeholder="Usuário" required>
+    </div>
+    <!-- Group for password input -->
+    <div class="form-group">
+      <img src="./assets/icons/password.svg" alt="password-icon"/> <!-- Correct icon for password -->
+      <input type="password" name="password" id="userpassword" class="form-input" placeholder="Senha" required>
+    </div>
+    <button type="submit" class="form-button form-button--submit">Entrar</button>
+  </div>
+</form>
+
+</div>
+
+</header>
+<main>
+<section class="hero__section">
+  <!-- Carousel Container -Bootstrap data-bs-interval="5000"-->
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" >
+  <div class="carousel-inner">
+    <!-- First Slide -->
+    <div class="carousel-item active carousel__first_slide">
+      <div class="carousel-caption">
+        <h1>
+  <span class="key">3</span>
+  <span class="key">0</span>
+  <span class="key">0</span>
+  <span class="key">0</span>
+  <span class="key">€</span>
+        </h1>
+        <p>no Casino e Casino ao vivo + 100 Rodadas Grátis na</p>
+      <a href="https://leon211.casino/registration" class="hero__section__cta" target="_blank">REGISTE-SE</a>
+      <img src="./assets/images/coin.png" alt="coin"  class="hero__section__coin__first" />
+      <img src="./assets/images/coin.png" alt="coin"  class="hero__section__coin__second" />
+    </div>
+  </div>
+<div class="carousel-item">
+  <img src="./assets/images/hero-img-2.png" class="game-logo__first-img" alt="game-img-logo" />
+  <img src="./assets//images/Character.png" class="carousel-images__box-img carousel-images__box-img--1" alt="game-character" />
+  <img src="./assets/images/game-img.png" class="carousel-images__box-img carousel-images__box-img--2" alt="game-character" />
+</div>
+<!-- Second Slide -->
+<div class="carousel-item">
+  <div class="game-logo__secondary">
+    <img src="./assets/images/Sweet-Bonanza.png" class="game-logo__second-img" alt="bannaza-game-logo" />
+  </div>
+  <div class="game-logo__third">
+ <img src="./assets/images/sweet-bananza.png" alt="bananza-game-logo" />
+</div>
+ <!-- Third Slide -->
+  <div class="game-container">
+    <img src="./assets/images/fruit-img-1.png" class="game-container__image" alt="banana-img" />
+    <img src="./assets/images/fruit-img-1.png" class="game-container__image" alt="banana-img" />
+    <img src="./assets/images/fruit-img-1.png" class="game-container__image" alt="banana-img" />
+    <img src="./assets/images/fruit-img-1.png" class="game-container__image" alt="banana-img" />
+    <img src="./assets/images/fruit-img-1.png" class="game-container__image" alt="banana-img" />
+  </div>
+  <div class="banana-game-box">
+      <img src="./assets/images/Character_1.png" class="banana-game-box__img" alt="banana-game">
+    </div>
+     <div class="banana-game-wrapper">
+      <img src="./assets/images/Character_2.png" class="banana-game-wrapper__img" alt="banana-game">
+    </div>
+</div>
+  </div>
+   <!-- Carousel Navigation Controls (Previous and Next buttons) -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+</section>
+ <!-- process__section -->
+<section class="process__section section">
+   <!-- process__section header -->
+    <h3 class="process__section__header__title">Registre-se Hoje, <span>Ganhe Amanhã!</span></h3>
+  <!-- process__section boxes -->
+  <div class="process__section__boxes">
+    <!-- First Step: Registration -->
+    <div class="process__section__box process__section__box--registration">
+      <div class="process__section__box__icons">
+        <img src="./assets/icons/blue-user_icon.svg" alt="user_icon" class="process__section__box__icon"/>
+         <img src="./assets/icons/blue_arrow.svg" alt="arrow_icon" class="process__section__box__icon arrow_icon" />
+      </div>
+      <h5 class="process__section__box__title">Passo 1: Registe-se</h5>
+      <p class="process__section__box__description">Junte-se à família Leon, completando o nosso processo de registo rápido e fácil.</p>
+    </div>
+ <!-- Second Step: Deposit -->
+    <div class="process__section__box process__section__box--deposit">
+      <div class="process__section__box__icons">
+        <img src="./assets/icons/money -icon.svg" alt="money_icon" class="process__section__box__icon" />
+         <img src="./assets/icons/green_arrow.svg" alt="arrow_icon" class="process__section__box__icon arrow_icon" />
+      </div>
+      <h5 class="process__section__box__title">Passo 2: Deposite</h5>
+      <p class="process__section__box__description">Conte com processamentos/métodos de pagamentos rápidos e variados!</p>
+    </div>
+ <!-- Third Step: Play -->
+    <div class="process__section__box process__section__box--gaming">
+      <div class="process__section__box__icons">
+         <img src="./assets/icons/gaming_icon.svg" alt="user_icon" class="process__section__box__icon" >
+         <img src="./assets/icons/orange_arrow.svg" alt="arrow_icon" class="process__section__box__icon arrow_icon" >
+      </div>
+      <h5 class="process__section__box__title">Passo 3: Jogue</h5>
+      <p class="process__section__box__description">A sua aventura pessoal na Leon começa a partir daqui!</p>
+    </div>
+  </div>
+</section>
+<!-- Section of Popular Games -->
+<section class="game_list_section section">
+  <!-- Section Title for Popular Games -->
+  <h4>JOGOS POPULARES</h4>
+  <!-- Container for the list of popular games -->
+  <div class="game_list_container">
+    <!-- Game 1 -->
+    <div class="game_list_box">
+      <img src="./assets/images/game-1.jpg" alt="game_logo" />
+    </div>
+    <!-- Game 2 -->
+    <div class="game_list_box">
+       <img src="./assets/images/game-2.jpg" alt="game_logo" />
+    </div>
+    <!-- Game 3 -->
+    <div class="game_list_box">
+       <img src="./assets/images/game-3.png" alt="game_logo" />
+    </div>
+    <!-- Game 4 -->
+    <div class="game_list_box">
+       <img src="./assets/images/game-4.jpg" alt="game_logo" />
+    </div>
+    <!-- Game 5 -->
+    <div class="game_list_box">
+       <img src="./assets/images/game-5.png" alt="game_logo" />
+    </div>
+    <!-- Game 6 -->
+    <div class="game_list_box">
+       <img src="./assets/images/game-6.png" alt="game_logo" />
+    </div>
+  </div>
+</section>
+<!-- Section of Games  card-->
+<section class="game__section section">
+   <!-- Card for Slots -->
+ <div class="game__section__card" id="slots">
+  <div class="game__section__card__content">
+    <!-- Front Side of the Card for Slots -->
+    <div class="card__side card__side--front">
+      <img src="./assets/images/card-1.jpg" alt="Slots">
+      <div class="game-area">Slots</div>
+    </div>
+    <!-- Back Side of the Card for Slots -->
+    <div class="card__side card__side--back">
+        <img src="./assets/images/side_back_img_1.jpg" alt="slot-img" />
+         <div class="card__side--back__text">
+          <p>Mais de 4.500 jogosà sua escolha!</p>
+         </div>
+    </div>
+  </div>
+</div>
+<!-- Card for Live Games -->
+  <div class="game__section__card" id="live-games">
+   <div class="game__section__card__content">
+     <!-- Front Side of the Card for Live Games-->
+    <div class="card__side card__side--front">
+      <img src="./assets/images/card-2.jpg" alt="gaming">
+      <div class="game-area">Jogos ao vivo</div>
+    </div>
+     <!-- Back Side of the Card for Live Games-->
+    <div class="card__side card__side--back">
+      <img src="./assets/images/side_back_img_2.jpg" alt="dice-img" />
+      <div class="card__side--back__text">
+      <p>Sinta a emoção de jogar num excelente casino online</p>
+      <p>Com os nossos dealers ao vivo!</p>
+</div>
+    </div>
+  </div>
+  </div>
+   <!-- Card for Service -->
+  <div class="game__section__card" id="service">
+  <div class="game__section__card__content">
+    <div class="card__side card__side--front">
+      <!-- Front Side of the Card for Service-->
+      <img src="./assets/images/card-3.jpg" alt="casino">
+      <div class="game-area">Serviço de excelência</div>
+    </div>
+     <!-- Back Side of the Card for Service-->
+    <div class="card__side card__side--back">
+      <img src="./assets/images/side_back_img_3.jpg" alt="card-img" />
+      <div class="card__side--back__text">
+  <p>Pagamentos rápidos</p>
+  <p>Atendimento ao cliente 24 horas por dia</p>
+  <p>7 dias por semana</p>
+</div>
+    </div>
+  </div>
+  </div>
+</section>
+<!-- CTA Section -->
+<section class="cta__section">
+  <!-- Main Content Wrapper for the CTA Section -->
+  <div class="cta__content">
+        <!-- Title of the CTA Section -->
+    <h2 class="cta__content__title">Junte-se e Ganhe Agora!</h2>
+    <!-- Description of the CTA Section -->
+    <p class="cta__content__description">Registe-se hoje e aproveite um bónus de boas-vindas de 100%! Explore os seus jogos de casino favoritos e comece a ganhar imediatamente!</p>
+    <!-- Button linking to the registration page for users to sign up -->
+    <a href="https://leon211.casino/registration" class="cta__content__btn" target="_blank">REGISTE-SE AGORA</a>
+  </div>
+   <!-- Image Section for the CTA -->
+  <div class="cta__image">
+    <img src="./assets/images/bonus_img.png" alt="imagem de bónus promocional" class="cta__image__img" />
+  </div>
+</section>
+</main>
+  <!-- Footer -->
+<footer class="footer">
+  <!-- Contact Information Section -->
+    <div class="footer__contact__icon-box">
+      <img src="./assets/icons/message.svg" alt="message-icon" class="footer__contact__icon" />
+    </div>
+     <div class="footer__info">
+    <!-- Footer Logo: Displays the company logo in the footer -->
+    <img src="./assets/icons/logo.svg" alt="company-logo" class="footer__info__logo">
+    <!-- Social Media box -->
+    <div class="footer__info__social">
+      <div class="footer__social-icons">
+        <a href="https://www.facebook.com" target="_blank" class="footer__social-icons__link">
+          <img src="./assets/icons/facebook.svg" alt="facebook-logo" class="footer__social-icons__icon" />
+        </a>
+        <a href="https://www.instagram.com" target="_blank" class="footer__social-icons__link">
+          <img src="./assets/icons/instagram.svg" alt="instagram-logo" class="footer__social-icons__icon" />
+        </a>
+        <a href="https://www.tiktok.com" target="_blank" class="footer__social-icons__link">
+          <img src="./assets/icons/tiktok.svg" alt="tiktok-logo" class="footer__social-icons__icon" />
+        </a>
+      </div>
+    </div>
+    <!-- Text Information: Copyright and Creator Information -->
+    <p class="footer__text">Created by Miranda Kachlavashvili</p>
+    <p class="footer__text">&commat; All rights reserved</p>
+    <!-- Date Section-->
+    <div class="footer__current__date__box"></div>
+  </div>
+</footer>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+ <script src="script.js"></script>
+</body>
+</html>
