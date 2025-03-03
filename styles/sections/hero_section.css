@@ -148,12 +148,12 @@
 
 .game-logo__secondary img {
   position: absolute;
-  top: 50%;
+  top: 55%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  width: 80%;
+  width: 50%;
   height: auto;
 }
 
@@ -171,17 +171,17 @@
 }
 
 .game-container__image {
-  width: 10%;
-  height: 10%;
+  width: 8%;
+  height: 8%;
   -webkit-animation: rounding 2s ease-in-out infinite;
   animation: rounding 2s ease-in-out infinite;
 }
 
 .game-logo__third img {
-  width: 20%;
+  width: 15%;
   height: auto;
   position: absolute;
-  top: 60%;
+  top: 75%;
   left: 40%;
   -webkit-animation: zooming 1s ease-in-out infinite;
   animation: zooming 1s ease-in-out infinite;
